@@ -37,4 +37,4 @@ RUN set -eux; \
 ENV ENV_NAME="cloud"
 ENV LETTA_RESTORE_ENABLED_CHANNELS="1"
 
-CMD ["sh", "-c", "cron && exec letta server --env-name \"$ENV_NAME\" --debug"]
+CMD ["sh", "-c", "cron && exec letta server --env-name \"$ENV_NAME\" --channels slack --debug"]
